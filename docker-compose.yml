@@ -10,7 +10,7 @@ services:
     environment:
       POSTGRES_SERVER: db
       POSTGRES_PASSWORD: password
-    platform: linux/arm64 # Patch for M1 Mac
+    platform: linux/arm64 # (Patch for M1 Mac) Change Platform to linux/amd64 if you are on Linux
     build:
       context: ./backend
 
