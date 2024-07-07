@@ -1,35 +1,23 @@
-# Use an image with curl pre-installed to streamline the build
-FROM python:3.11.1-slim-bullseye
+FROM python:3.10-slim
 
-# Update package lists and install curl for Poetry installation
-RUN apt-get update && apt-get install -y curl
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+ENV PYTHONPATH "${PYTHONPATH}:/app"
 
-# Download and install Poetry
-RUN curl -sSL https://install.python-poetry.org | python -
+RUN apt-get update && apt-get install -y \
+    libpq-dev
 
-# Add Poetry to the system PATH to make it easily accessible
-ENV PATH="${PATH}:/root/.local/bin"
+WORKDIR /app
 
-# Set the working directory inside the container
-WORKDIR /backend
+RUN pip install poetry
+COPY pyproject.toml poetry.lock /app/
+RUN poetry config virtualenvs.create true \
+    && poetry install --no-dev --no-interaction --no-ansi
 
-# Copy only Poetry configuration files to leverage Docker layer caching
-COPY pyproject.toml poetry.lock ./
+COPY . /app/
 
-# Install project dependencies using Poetry
-RUN poetry install
+RUN chmod +x /app/prestart.sh
 
-# Copy the rest of the application code into the container
-COPY . .
-
-# Set the PYTHONPATH environment variable so Python can find your app module
-ENV PYTHONPATH=/backend
-
-# Run prestart script
-RUN poetry run bash ./prestart.sh
-
-# Expose the port the FastAPI application will run on
 EXPOSE 8000
 
-# Define the default command to run when the container starts
-CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+ENTRYPOINT ["poetry", "run", "bash", "-c", "/app/prestart.sh && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
