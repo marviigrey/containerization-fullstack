@@ -26,11 +26,9 @@ docker-compose up -d
 ```
 
 On your browser, you can access the following pages:
-localhost
-localhost/api
-localhost/docs
-localhost/redoc
-db.localhost
-proxy.localhost
-localhost:8090
-localhost:8080
+`localhost`
+`localhost/api`
+`localhost/docs`
+`localhost/redoc`
+`db.localhost` or `localhost:8080`
+`proxy.localhost` or `localhost:8090`
