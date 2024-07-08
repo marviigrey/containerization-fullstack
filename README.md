@@ -25,10 +25,50 @@ Run:
 docker-compose up -d
 ```
 
+## Access the containers locally
 On your browser, you can access the following pages:
-`localhost`
-`localhost/api`
-`localhost/docs`
-`localhost/redoc`
-`db.localhost` or `localhost:8080`
-`proxy.localhost` or `localhost:8090`
+
+### Frontend
+Load `localhost` in your browser to access the frontend.
+![frontend](<Screenshot 2024-07-08 at 20.04.52.png>)
+
+### Backend
+Load `localhost/api` in your browser to access the backend.
+![backend](<Screenshot 2024-07-08 at 20.14.57.png>)
+
+### Backend Docs
+Load `localhost/docs` in your browser to access the backend docs.
+![backend-docs](<Screenshot 2024-07-08 at 20.04.30.png>)
+
+### Backend Redoc
+Load `localhost/redoc` in your browser to access the backend redoc.
+![redoc](<Screenshot 2024-07-08 at 20.04.37.png>)
+
+### Adminer
+Load `db.localhost` or `localhost:8080` in your browser to access Adminer.
+![adminer1](<Screenshot 2024-07-08 at 19.59.52.png>)
+![alt text](<Screenshot 2024-07-08 at 20.18.29.png>)
+
+The login creds are:
+| Value | Password |
+|----------|----------|
+| System | PostgreSQL |
+| Server | db   |
+| Username | app   |
+| Password | password   |
+| Database | app   |
+|||
+
+### Proxy Manager GUI
+
+Load `proxy.localhost` or `localhost:8090` in your browser to access Nginx Proxy Manager GUI.
+
+![alt text](<Screenshot 2024-07-08 at 20.04.04.png>)
+![alt text](<Screenshot 2024-07-08 at 20.03.51.png>)
+
+The default login creds for Nginx Proxy Manager are:
+| Value | Credential |
+|----------|----------|
+| Email | admin@example.com |
+| Password | changeme |
+|||
