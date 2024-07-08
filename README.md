@@ -47,10 +47,10 @@ Load `localhost/redoc` in your browser to access the backend redoc.
 ### Adminer
 Load `db.localhost` or `localhost:8080` in your browser to access Adminer.
 ![adminer1](<Screenshot 2024-07-08 at 19.59.52.png>)
-![alt text](<Screenshot 2024-07-08 at 20.18.29.png>)
+<img width="1196" alt="Screenshot 2024-07-08 at 20 18 29" src="https://gist.github.com/assets/89241109/99bafaae-1099-441c-80cc-cd1367cb1a11">
 
 The login creds are:
-| Value | Password |
+| Value | Credential |
 |----------|----------|
 | System | PostgreSQL |
 | Server | db   |
