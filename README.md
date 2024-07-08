@@ -18,3 +18,19 @@ To get started with this template, please follow the instructions in the respect
 - [Frontend README](./frontend/README.md)
 - [Backend README](./backend/README.md)
 
+## Running Locally
+
+Run:
+```
+docker-compose up -d
+```
+
+On your browser, you can access the following pages:
+localhost
+localhost/api
+localhost/docs
+localhost/redoc
+db.localhost
+proxy.localhost
+localhost:8090
+localhost:8080
