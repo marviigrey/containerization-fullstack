@@ -30,23 +30,25 @@ On your browser, you can access the following pages:
 
 ### Frontend
 Load `localhost` in your browser to access the frontend.
-![frontend](<Screenshot 2024-07-08 at 20.04.52.png>)
+<img width="1196" alt="Screenshot 2024-07-08 at 20 04 52" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/1ecfb7b7-40ed-4d0c-9573-98012eb59f50">
+
 
 ### Backend
 Load `localhost/api` in your browser to access the backend.
-![backend](<Screenshot 2024-07-08 at 20.14.57.png>)
+<img width="1196" alt="Screenshot 2024-07-08 at 20 14 57" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/a633aa16-d3c7-4174-a08a-66296889373d">
 
 ### Backend Docs
 Load `localhost/docs` in your browser to access the backend docs.
-![backend-docs](<Screenshot 2024-07-08 at 20.04.30.png>)
+<img width="1196" alt="Screenshot 2024-07-08 at 20 04 30" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/18a8b680-dd28-4009-ba56-b076f24146a8">
 
 ### Backend Redoc
 Load `localhost/redoc` in your browser to access the backend redoc.
-![redoc](<Screenshot 2024-07-08 at 20.04.37.png>)
+<img width="1196" alt="Screenshot 2024-07-08 at 20 04 37" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/c127015e-524d-41b4-9df7-e916ebcd22b4">
+
 
 ### Adminer
 Load `db.localhost` or `localhost:8080` in your browser to access Adminer.
-![adminer1](<Screenshot 2024-07-08 at 19.59.52.png>)
+<img width="1196" alt="Screenshot 2024-07-08 at 19 59 52" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/36b54ad5-7a1e-4fd1-95bf-830529ee1c03">
 <img width="1196" alt="Screenshot 2024-07-08 at 20 18 29" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/6c71b1c7-7820-4ff8-8d93-eec85739af39">
 
 The login creds are:
@@ -62,9 +64,9 @@ The login creds are:
 ### Proxy Manager GUI
 
 Load `proxy.localhost` or `localhost:8090` in your browser to access Nginx Proxy Manager GUI.
+<img width="1196" alt="Screenshot 2024-07-08 at 20 04 04" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/83abdf29-a785-4ece-baec-5a5377176135">
+<img width="1196" alt="Screenshot 2024-07-08 at 20 03 51" src="https://github.com/FavourDaniel/containerization-hng/assets/89241109/a8e89846-95df-4d6b-bbf3-4aa8a15fafd2">
 
-![alt text](<Screenshot 2024-07-08 at 20.04.04.png>)
-![alt text](<Screenshot 2024-07-08 at 20.03.51.png>)
 
 The default login creds for Nginx Proxy Manager are:
 | Value | Credential |
