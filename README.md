@@ -59,8 +59,8 @@ To get started with this template, please follow the instructions in the respect
 4. **Configure API URL**:
    Ensure the API URL is correctly set in the `.env` file.
    
-## Docker Setup
-### Docker Compose
+## Docker Setup with Docker Compose
+
 1. **Build and start the services**:
     ```sh
     docker-compose up --build
@@ -70,15 +70,16 @@ To get started with this template, please follow the instructions in the respect
     docker-compose down
     ```
 ### Notes
+- Before running the `docker-compose up` command, under the Docker Compose config for the backend, there is a `platform` specification. The Docker image is dependent on the system you are running the `docker-compose up` command on. Use the below to apply the patch based on your system:
+
+| Platform | Patch |
+|----------|----------|
+| Mac M1   | linux/arm64    |
+| Linux    | linux/amd64    |
+| Mac Intel Chip | linux/amd64 |
+
 - Ensure the `.env` files in both `frontend` and `backend` directories are correctly configured.
 - The `docker-compose.yml` file defines the services for the frontend, backend, PostgreSQL, proxy manager, Adminer, and Nginx.
-
-## Running Locally
-
-Run:
-```
-docker-compose up -d
-```
 
 ## Access the containers locally
 On your browser, you can access the following pages:
@@ -114,7 +115,6 @@ The login creds are:
 | Username | app   |
 | Password | password   |
 | Database | app   |
-|||
 
 ### Proxy Manager GUI
 
@@ -128,4 +128,3 @@ The default login creds for Nginx Proxy Manager are:
 |----------|----------|
 | Email | admin@example.com |
 | Password | changeme |
-|||
