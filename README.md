@@ -18,3 +18,16 @@ To get started with this template, please follow the instructions in the respect
 - [Frontend README](./frontend/README.md)
 - [Backend README](./backend/README.md)
 
+Ensure you have:
+
+- docker engine and docker compose
+- nodejs
+- python
+- postgresql
+
+For both backend and frontend, create an image using the docker files in their respective directories.
+
+Frontend: ensure the .env is properly configured with your domain name.
+backend: The env file should contain the credentials of your postgresql and CORS origin. 
+Docker-compose file contains the configuration of both the frontend backend database pointing to our domain names.
+
